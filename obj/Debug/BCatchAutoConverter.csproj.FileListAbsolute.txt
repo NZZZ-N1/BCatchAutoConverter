@@ -1,0 +1,12 @@
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\bin\Debug\BCatchAutoConverter.exe.config
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\bin\Debug\BCatchAutoConverter.exe
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\bin\Debug\BCatchAutoConverter.pdb
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.csproj.AssemblyReference.cache
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.MainForm.resources
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.Properties.Resources.resources
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.csproj.GenerateResource.cache
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.csproj.CoreCompileInputs.cache
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.exe
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.pdb
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.exe.config
+F:\CodeProjects\Csharp\CommonPro\BCatchAutoConverter\obj\Debug\BCatchAutoConverter.csproj.SuggestedBindingRedirects.cache
