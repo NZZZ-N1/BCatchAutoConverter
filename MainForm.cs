@@ -38,6 +38,7 @@ namespace BCatchAutoConverter
             Text_Path_OriginalVedio.Text = PathManager.Path_OriginalVedio ?? "无有效视频路径";
             Text_Path_OriginalAudio.Text = PathManager.Path_OriginalAudio ?? "无有效音频路径";
         }
+        public static string InputFieldText_FileName => Instance.InputField_OutputFileName.Text;
 
         #region Button_设置路径
         #region ButtonClick
@@ -187,9 +188,10 @@ namespace BCatchAutoConverter
             Button_Decrypt_Click(IIS_TRUE, null);
             Button_ChangeExt_Click(IIS_TRUE, null);
             Button_ConvertFormat_Click(IIS_TRUE, null);
+            ChangeFileNameAfterConvert.OnOneFileConvertEnd(false);
         }
         #endregion
-        #region Button_合并
+        #region Button_合并文件
         private void Button_Combine_Click(object sender, EventArgs e)
         {
             string str = FormatConvert.MergeToMp4();
@@ -197,10 +199,11 @@ namespace BCatchAutoConverter
                 MessageBox.Show(str, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
                 MessageBox.Show("合并完成", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ChangeFileNameAfterConvert.OnOneFileConvertEnd(true);
         }
         #endregion
-
     }
+    #region IgnoreButtonEx拓展
     public static class IgnoreButtonEx
     {
         //是否允许调用按钮时忽略弹窗
@@ -217,4 +220,5 @@ namespace BCatchAutoConverter
             return false;
         }
     }
+    #endregion
 }

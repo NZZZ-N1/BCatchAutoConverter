@@ -95,6 +95,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeFileNameAfterConvert.cs" />
     <Compile Include="FileBinarySetter.cs" />
     <Compile Include="FormatConvert.cs" />
     <Compile Include="MainForm.cs">

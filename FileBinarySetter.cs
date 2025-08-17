@@ -5,7 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 
 namespace BCatchAutoConverter
-{
+{ 
     internal static class FileBinarySetter
     {
         //返回null表示没有问题，非null则是错误信息

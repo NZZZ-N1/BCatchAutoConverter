@@ -37,6 +37,8 @@
             this.Button_ChangeExt = new System.Windows.Forms.Button();
             this.Button_AutoStart = new System.Windows.Forms.Button();
             this.Button_Combine = new System.Windows.Forms.Button();
+            this.InputField_OutputFileName = new System.Windows.Forms.TextBox();
+            this.Text_OutputFileName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Button_SetPath_OriginalVedio
@@ -79,7 +81,7 @@
             // 
             // Button_Decrypt
             // 
-            this.Button_Decrypt.Location = new System.Drawing.Point(12, 130);
+            this.Button_Decrypt.Location = new System.Drawing.Point(12, 174);
             this.Button_Decrypt.Name = "Button_Decrypt";
             this.Button_Decrypt.Size = new System.Drawing.Size(75, 23);
             this.Button_Decrypt.TabIndex = 6;
@@ -89,7 +91,7 @@
             // 
             // Button_ConvertFormat
             // 
-            this.Button_ConvertFormat.Location = new System.Drawing.Point(14, 188);
+            this.Button_ConvertFormat.Location = new System.Drawing.Point(14, 232);
             this.Button_ConvertFormat.Name = "Button_ConvertFormat";
             this.Button_ConvertFormat.Size = new System.Drawing.Size(75, 23);
             this.Button_ConvertFormat.TabIndex = 7;
@@ -99,7 +101,7 @@
             // 
             // Button_ChangeExt
             // 
-            this.Button_ChangeExt.Location = new System.Drawing.Point(14, 159);
+            this.Button_ChangeExt.Location = new System.Drawing.Point(14, 203);
             this.Button_ChangeExt.Name = "Button_ChangeExt";
             this.Button_ChangeExt.Size = new System.Drawing.Size(75, 23);
             this.Button_ChangeExt.TabIndex = 8;
@@ -109,7 +111,7 @@
             // 
             // Button_AutoStart
             // 
-            this.Button_AutoStart.Location = new System.Drawing.Point(16, 248);
+            this.Button_AutoStart.Location = new System.Drawing.Point(14, 286);
             this.Button_AutoStart.Name = "Button_AutoStart";
             this.Button_AutoStart.Size = new System.Drawing.Size(75, 23);
             this.Button_AutoStart.TabIndex = 9;
@@ -119,7 +121,7 @@
             // 
             // Button_Combine
             // 
-            this.Button_Combine.Location = new System.Drawing.Point(16, 277);
+            this.Button_Combine.Location = new System.Drawing.Point(14, 315);
             this.Button_Combine.Name = "Button_Combine";
             this.Button_Combine.Size = new System.Drawing.Size(75, 23);
             this.Button_Combine.TabIndex = 10;
@@ -127,11 +129,29 @@
             this.Button_Combine.UseVisualStyleBackColor = true;
             this.Button_Combine.Click += new System.EventHandler(this.Button_Combine_Click);
             // 
+            // InputField_OutputFileName
+            // 
+            this.InputField_OutputFileName.Location = new System.Drawing.Point(12, 135);
+            this.InputField_OutputFileName.Name = "InputField_OutputFileName";
+            this.InputField_OutputFileName.Size = new System.Drawing.Size(167, 21);
+            this.InputField_OutputFileName.TabIndex = 11;
+            // 
+            // Text_OutputFileName
+            // 
+            this.Text_OutputFileName.AutoSize = true;
+            this.Text_OutputFileName.Location = new System.Drawing.Point(12, 120);
+            this.Text_OutputFileName.Name = "Text_OutputFileName";
+            this.Text_OutputFileName.Size = new System.Drawing.Size(149, 12);
+            this.Text_OutputFileName.TabIndex = 12;
+            this.Text_OutputFileName.Text = "输出文件/合并文件 的名称";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 361);
+            this.Controls.Add(this.Text_OutputFileName);
+            this.Controls.Add(this.InputField_OutputFileName);
             this.Controls.Add(this.Button_Combine);
             this.Controls.Add(this.Button_AutoStart);
             this.Controls.Add(this.Button_ChangeExt);
@@ -163,6 +183,8 @@
         private System.Windows.Forms.Button Button_ChangeExt;
         private System.Windows.Forms.Button Button_AutoStart;
         private System.Windows.Forms.Button Button_Combine;
+        private System.Windows.Forms.TextBox InputField_OutputFileName;
+        private System.Windows.Forms.Label Text_OutputFileName;
     }
 }
 

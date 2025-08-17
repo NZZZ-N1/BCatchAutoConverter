@@ -12,8 +12,9 @@ namespace BCatchAutoConverter
         public static string FfmPath => Application.StartupPath + @"\" + "ffmpeg.exe";
         public static bool FfmExist => File.Exists(FfmPath);
 
-        const string FILENAME_OUTPUT_VEDIO = "n_vedio";
-        const string FILENAME_OUTPUT_AUDIO = "n_audio";
+        public const string FILENAME_OUTPUT_VEDIO = "n_vedio";
+        public const string FILENAME_OUTPUT_AUDIO = "n_audio";
+        public const string FILENAME_OUTPUT_MERGE = "Merge";
 
         /// <summary>
         /// ext= .mp3 or .mp4
@@ -111,7 +112,7 @@ namespace BCatchAutoConverter
             if (!File.Exists(path_mp4) || !File.Exists(path_mp3))
                 return "缺失视频或音频文件";
 
-            string arg = $"-i \"{path_mp4}\" -i \"{path_mp3}\" -c:v copy -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 -shortest \"{Path.Combine(basePath, "merge.mp4")}\"";
+            string arg = $"-i \"{path_mp4}\" -i \"{path_mp3}\" -c:v copy -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 -shortest \"{Path.Combine(basePath, FILENAME_OUTPUT_MERGE + ".mp4")}\"";
             try
             {
                 ConvertFormat(FfmPath, arg);
